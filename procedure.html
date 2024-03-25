@@ -14,10 +14,20 @@
     <div class="row">
       <div class="column">
         <div class="card">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Id eu nisl nunc mi ipsum faucibus. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa massa ultricies mi quis hendrerit. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pharetra vel turpis nunc eget lorem dolor. Amet justo donec enim diam vulputate ut pharetra. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Lectus proin nibh nisl condimentum id venenatis a. Sit amet consectetur adipiscing elit. Tincidunt arcu non sodales neque sodales ut etiam sit. Vitae justo eget magna fermentum.</p>
+          <h3>Client</h3>
+          <p>Client starts by parsing the input file, each line of the file is considered as a request. for each request it formats a packet based on what is required by the protocol and what data is given. Client the sends the packet to the server and waits for a response, once the client receives a response it parses the packet for and formats the output string and prints it out. Client then moves on to next request</p>
         </div>
       </div>
     </div>
 <br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Server (Unoptimized)</h3>
+          <p>Server will have a main thread that is constantly waiting for new conections, for each new connection it creates a new thread and passes that connection to the thread. The thread will receive packets containing requests from the connected client. The server will search for the ASN of the IP or ORG in a database, then the server will use that ASN to lookup in another database ethier the IP or the ORG basesd on what is requested. server will then format a packet containing the response and send it to the client </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
